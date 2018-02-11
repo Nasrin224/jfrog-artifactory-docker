@@ -26,7 +26,7 @@ node {
             server.publishBuildInfo buildInfo
         }
     stage ('Docker Preparation'){
-        git url: 'https://github.com/devops-courses/nodejs-docker-demo.git'
+        git url: 'https://github.com/Nasrin224/nodejs.git'
         sh "git rev-parse --short HEAD > .git/commit-id"                        
         commit_id = readFile('.git/commit-id').trim()
     }
