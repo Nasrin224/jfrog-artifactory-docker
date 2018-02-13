@@ -1,6 +1,6 @@
 node {
     def commit_id
-    def server = Artifactory.server('nasrin.jfrog.io')
+    def server = Artifactory.server('nasrin224.jfrog.io')
     def rtGradle = Artifactory.newGradleBuild()
     def buildInfo = Artifactory.newBuildInfo()
     stage 'Build'
